@@ -1,5 +1,29 @@
 # Storefront Backend Project
 
+### My ENV variable that I used 
+
+PORT= 3000
+  POSTGRES_HOST=127.0.0.1
+  POSTGRES_DB=store_front
+  POSTGRES_TEST_DB=store_front_test
+  POSTGRES_USER=project_user
+  POSTGRES_PASSWORD=password123
+  ENV=dev
+  BCRYPT_PASSWORD=pass123
+  SALT_ROUNDS=10
+  TOKEN_SECRET=KbjBCPAMrt
+
+
+
+
+
+
+
+
+
+
+
+## Requirements
 ## Getting Started
 
 This repo contains a basic Node and Express app to get you started in constructing an API. To get started, clone this repo and run `yarn` in your terminal at the project root.
@@ -39,6 +63,13 @@ You must also ensure that any sensitive information is hashed with bcrypt. If an
 
 Create the models for each database table. The methods in each model should map to the endpoints in `REQUIREMENTS.md`. Remember that these models should all have test suites and mocks.
 
+
+
+
+
+
+
+
 ### 4. Express Handlers
 
 Set up the Express handlers to route incoming requests to the correct model method. Make sure that the endpoints you create match up with the enpoints listed in `REQUIREMENTS.md`. Endpoints must have tests and be CORS enabled. 
@@ -52,3 +83,11 @@ Add JWT functionality as shown in the course. Make sure that JWTs are required f
 Before submitting, make sure that your project is complete with a `README.md`. Your `README.md` must include instructions for setting up and running your project including how you setup, run, and connect to your database. 
 
 Before submitting your project, spin it up and test each endpoint. If each one responds with data that matches the data shapes from the `REQUIREMENTS.md`, it is ready for submission!
+
+
+
+
+
+
+
+
