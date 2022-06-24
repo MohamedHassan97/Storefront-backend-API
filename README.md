@@ -15,7 +15,33 @@
 
 ## Create Database 
 
+- connect to the default postgres database as the server's root user : 
 
+```
+psql -U postgres
+```
+- In psql run the following to create a user
+```
+CREATE USER project_user WITH PASSWORD 'password123';
+```
+- In psql run the following to create the dev and test database
+```
+CREATE DATABASE store_front;
+CREATE DATABASE store_front_test;
+```
+- Connect to the databases and grant all privileges
+```
+\c store_front;
+GRANT ALL PRIVILEGES ON DATABASE store_front TO project_user;
+
+\c store_front_test;
+GRANT ALL PRIVILEGES ON DATABASE store_front_test TO project_user;
+```
+- In psql run the following to create the dev and test database
+```
+CREATE DATABASE store_front;
+CREATE DATABASE store_front_test;
+```
 
 
 
