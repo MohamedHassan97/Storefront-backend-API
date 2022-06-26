@@ -45,7 +45,42 @@ CREATE DATABASE store_front_test;
 
 
 
-- you can check the endpoint from that  [link](https://github.com/MohamedHassan97/Storefront-backend-API/blob/master/REQUIREMENTS.md)
+- you can check the databse structure from that  [link](https://github.com/MohamedHassan97/Storefront-backend-API/blob/master/REQUIREMENTS.md)
+
+
+
+
+
+
+#API Endpoints
+
+###Products
+
+Index: /products (http://localhost:3000/products) [get]
+Show: /products/:id (http://localhost:3000/products/:id) [get]
+Create: /products (http://localhost:3000/products) [post]
+Delete: /products/:id  (http://localhost:3000/products/:id) [delete]
+
+###Users
+Index: /users (http://localhost:3000/users)  [get]
+Show: /users/:id (http://localhost:3000/users:id)    [get]
+Create: /users  (http://localhost:3000/users) [post]
+Delete: /users  (http://localhost:3000/users:id)  [delete]
+
+###Orders
+Index: /orders (http://localhost:3000/orders)   [get]
+Show: /orders/:id  (http://localhost:3000/orders:id)   [get]
+Create: /orders   (http://localhost:3000/orders)  [post]
+CurrentOrders: /orders/current   (http://localhost:3000/orders/current)   [get]
+CompletedOrders: /orders/completed      (http://localhost:3000/orders/completed ) [get]
+
+###OrderProduct
+
+Show: "/orders/:id/products" (http://localhost:3000/orders/:id/products) [get]
+delete: ""/orders/:id/products"  (http://localhost:3000/orders/:id/products) [delete]
+
+
+
 
 
 ## Requirements
