@@ -76,8 +76,8 @@ CREATE DATABASE store_front_test;
 
 ### OrderProduct
 
-- Show: "/orders/:id/products" (http://localhost:3000/orders/:id/products) [get]
-- delete: ""/orders/:id/products"  (http://localhost:3000/orders/:id/products) [delete]
+- Show: /orders/:id/products (http://localhost:3000/orders/:id/products) [get]
+- delete: /orders/:id/products  (http://localhost:3000/orders/:id/products) [delete]
 
 
 
