@@ -45,8 +45,7 @@ CREATE DATABASE store_front_test;
 
 
 
-
-
+- you can check the endpoint from that  [link] (https://github.com/MohamedHassan97/Storefront-backend-API/blob/master/REQUIREMENTS.md)
 
 
 ## Requirements
