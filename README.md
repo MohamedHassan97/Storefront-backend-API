@@ -56,32 +56,34 @@ CREATE DATABASE store_front_test;
 
 ###Products
 
-Index: /products (http://localhost:3000/products) [get]
-Show: /products/:id (http://localhost:3000/products/:id) [get]
-Create: /products (http://localhost:3000/products) [post]
-Delete: /products/:id  (http://localhost:3000/products/:id) [delete]
+- Index: /products (http://localhost:3000/products) [get]
+- Show: /products/:id (http://localhost:3000/products/:id) [get]
+- Create: /products (http://localhost:3000/products) [post]
+- Delete: /products/:id  (http://localhost:3000/products/:id) [delete]
 
 ###Users
-Index: /users (http://localhost:3000/users)  [get]
-Show: /users/:id (http://localhost:3000/users:id)    [get]
-Create: /users  (http://localhost:3000/users) [post]
-Delete: /users  (http://localhost:3000/users:id)  [delete]
+- Index: /users (http://localhost:3000/users)  [get]
+- Show: /users/:id (http://localhost:3000/users:id)    [get]
+- Create: /users  (http://localhost:3000/users) [post]
+- Delete: /users  (http://localhost:3000/users:id)  [delete]
 
 ###Orders
-Index: /orders (http://localhost:3000/orders)   [get]
-Show: /orders/:id  (http://localhost:3000/orders:id)   [get]
-Create: /orders   (http://localhost:3000/orders)  [post]
-CurrentOrders: /orders/current   (http://localhost:3000/orders/current)   [get]
-CompletedOrders: /orders/completed      (http://localhost:3000/orders/completed ) [get]
+- Index: /orders (http://localhost:3000/orders)   [get]
+- Show: /orders/:id  (http://localhost:3000/orders:id)   [get]
+- Create: /orders   (http://localhost:3000/orders)  [post]
+- CurrentOrders: /orders/current   (http://localhost:3000/orders/current)   [get]
+- CompletedOrders: /orders/completed      (http://localhost:3000/orders/completed ) [get]
 
 ###OrderProduct
 
-Show: "/orders/:id/products" (http://localhost:3000/orders/:id/products) [get]
-delete: ""/orders/:id/products"  (http://localhost:3000/orders/:id/products) [delete]
+- Show: "/orders/:id/products" (http://localhost:3000/orders/:id/products) [get]
+- delete: ""/orders/:id/products"  (http://localhost:3000/orders/:id/products) [delete]
 
 
 
-
+##Ports
+- Server runs on port ``` 3000```
+- Database on port ```5432```
 
 ## Requirements
 ## Getting Started
