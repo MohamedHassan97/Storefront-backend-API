@@ -1,6 +1,6 @@
 # Storefront Backend Project
 
-### My ENV variable that I used 
+### Env variables that I used 
 
 - PORT= 3000
 - POSTGRES_HOST=127.0.0.1
@@ -84,6 +84,46 @@ CREATE DATABASE store_front_test;
 ## Ports
 - Server runs on port ``` 3000```
 - Database on port ```5432```
+
+
+
+
+
+# Data Shapes
+
+### Product
+id [SERIAL PRIMARY KEY]
+name [VARCHAR(50)]
+price [NUMERIC]
+
+### User
+id [SERIAL PRIMARY KEY]
+firstName [VARCHAR(50)]
+lastName [VARCHAR(50)]
+password [VARCHAR(60)]
+
+### Orders
+id [SERIAL PRIMARY KEY]
+user_id [INTEGER]
+status [VARCHAR(20)] (active or current or complete)
+
+### Order_Product
+id [SERIAL PRIMARY KEY]
+quantity [INTEGER]
+user_id [INTEGER] REFERENCES orders(id)
+product_id [INTEGER] REFERENCES products(id)
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Requirements
 ## Getting Started
