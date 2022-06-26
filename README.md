@@ -45,6 +45,31 @@ CREATE DATABASE store_front_test;
 
 
 
+
+
+- Run Migrations
+```
+# globally to use its  terminal comands
+npm install -g db-migrate
+db-migrate up
+```
+
+- Run development server
+```
+npm start
+
+# or
+npm run watch
+```
+
+
+- or: Run Production server
+```
+npm run build & node dist/server.js
+
+```
+
+
 - you can check the databse structure from that  [link](https://github.com/MohamedHassan97/Storefront-backend-API/blob/master/REQUIREMENTS.md)
 
 
@@ -92,26 +117,26 @@ CREATE DATABASE store_front_test;
 # Data Shapes
 
 ### Product
-id [SERIAL PRIMARY KEY]
-name [VARCHAR(50)]
-price [NUMERIC]
+- id [SERIAL PRIMARY KEY]
+- name [VARCHAR(50)]
+- price [NUMERIC]
 
 ### User
-id [SERIAL PRIMARY KEY]
-firstName [VARCHAR(50)]
-lastName [VARCHAR(50)]
-password [VARCHAR(60)]
+- id [SERIAL PRIMARY KEY]
+- firstName [VARCHAR(50)]
+- lastName [VARCHAR(50)]
+- password [VARCHAR(60)]
 
 ### Orders
-id [SERIAL PRIMARY KEY]
-user_id [INTEGER]
-status [VARCHAR(20)] (active or current or complete)
+- id [SERIAL PRIMARY KEY]
+- user_id [INTEGER]
+- status [VARCHAR(20)] (active or current or complete)
 
 ### Order_Product
-id [SERIAL PRIMARY KEY]
-quantity [INTEGER]
-user_id [INTEGER] REFERENCES orders(id)
-product_id [INTEGER] REFERENCES products(id)
+- id [SERIAL PRIMARY KEY]
+- quantity [INTEGER]
+- user_id [INTEGER] REFERENCES orders(id)
+- product_id [INTEGER] REFERENCES products(id)
 
 
 
