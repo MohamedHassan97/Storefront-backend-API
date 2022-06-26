@@ -12,7 +12,10 @@
 - BCRYPT_PASSWORD=pass123
 - SALT_ROUNDS=10
 - TOKEN_SECRET=KbjBCPAMrt
-
+## install dependenscies
+```
+npm install
+```
 ## Create Database 
 
 - connect to the default postgres database as the server's root user : 
