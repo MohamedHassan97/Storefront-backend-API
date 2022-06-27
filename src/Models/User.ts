@@ -43,7 +43,7 @@ export class User{
 async create ( u: UserType  ): Promise<UserType[]> {
     try
     {
-      const sql: string = "INSERT INTO users (ID ,firstName,lastName,password) VALUES ($1,$2,$3,$4) RETUNING *";
+      const sql: string = "INSERT INTO users (ID ,firstName,lastName,password) VALUES ($1,$2,$3,$4) RETURNING *";
       const conn: PoolClient = await client.connect();
       
         // PASSWORD HASHING
