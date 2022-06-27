@@ -28,7 +28,7 @@ const create = async (req: Request, res: Response) => {
       Order_status: req.body.status,
     };
 
-    const newOrder: OrderType = await orderStore.create(order);
+    const newOrder: OrderType[] = await orderStore.create(order.UserID,order.Order_status);
     return res.json(newOrder);
   } catch (err) {
     res.status(400);
@@ -39,7 +39,7 @@ const create = async (req: Request, res: Response) => {
 // Get all completed orders
 const CompletedOrders = async (req: Request, res: Response) => {
   try {
-    const Orders: OrderType[] = await orderStore.getCompletedOrders();
+    const Orders: OrderType[] = await orderStore.showCompleted();
     console.log(Orders);
     return res.json(Orders);
   } catch (err) {
@@ -51,7 +51,7 @@ const CompletedOrders = async (req: Request, res: Response) => {
 // Get all Current orders
 const CurrentOrders = async (req: Request, res: Response) => {
   try {
-    const Orders: OrderType[] = await orderStore.getCurrentOrders();
+    const Orders: OrderType[] = await orderStore.showCurrent();
     return res.json(Orders);
   } catch (err) {
     res.status(400);
@@ -63,7 +63,7 @@ const CurrentOrders = async (req: Request, res: Response) => {
 const show = async (req: Request, res: Response) => {
   try {
     const userId: number = parseInt(req.params.id);
-    const Orders: OrderType[] = await orderStore.show(userId);
+    const Orders: OrderType[] = await orderStore.showWithId(userId);
     return res.json(Orders);
   } catch (err) {
     res.status(400);

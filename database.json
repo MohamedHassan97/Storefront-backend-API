@@ -6,6 +6,7 @@
       "user": "project_user",
       "password": "password123"
     },
+    
     "test": {
       "driver": "pg",
       "host": "127.0.0.1",

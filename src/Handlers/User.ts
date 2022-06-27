@@ -21,7 +21,7 @@ const index = async (req: Request, res: Response) => {
 const show = async (req: Request, res: Response) => {
   try {
     const userId: number = parseInt(req.params.id);
-    const new_user: UserType = await UserStore.showWithId(userId);
+    const new_user: UserType[] = await UserStore.showWithId(userId);
     res.json(new_user);
   } catch (err) {
     res.status(400).json(err);

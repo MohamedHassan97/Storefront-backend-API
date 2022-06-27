@@ -1,1 +1,0 @@
-CREATE TABLE Orders( ID SERIAL PRIMARY KEY , UserID  INTEGER , Order_status VARCHAR(50) ) ;
